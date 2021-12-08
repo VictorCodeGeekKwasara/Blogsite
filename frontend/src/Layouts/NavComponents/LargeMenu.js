@@ -64,8 +64,12 @@ export default function LargeMenu(props) {
 			</Typography>
 			<Box sx={NavLinks}>{linkItems}</Box>
 			<ButtonGroup type='group'>
-				<Button variant='outlined'>Login</Button>
-				<Button variant='contained'>Join Us</Button>
+				<Button variant='outlined' component={Link} href='/login'>
+					Login
+				</Button>
+				<Button variant='contained' component={Link} href='/joinus'>
+					Join Us
+				</Button>
 			</ButtonGroup>
 		</Toolbar>
 	);

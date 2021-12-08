@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@mui/material/Link';
 import { Box } from '@mui/system';
-const mylinks = ['about', 'contacts', 'suggest', 'login', 'logout'];
+const mylinks = ['about', 'contact', 'suggest', 'login', 'logout'];
 
 const styles = {
 	box: {

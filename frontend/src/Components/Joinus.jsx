@@ -4,7 +4,6 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
-
 const styles = {
 	box: {
 		marginTop: '15vh',
@@ -52,15 +51,17 @@ const styles = {
 	},
 };
 
-export default function Joinus() {
+export default function Login() {
+	const [nameError, setNameError] = useState(false);
 	const [passError, setPassError] = useState(false);
 	const [emailError, setEmailError] = useState(false);
-
+	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
 	const handlesubmit = (e) => {
 		setEmailError(false);
+		setNameError(false);
 		setPassError(false);
 		e.preventDefault();
 		console.log('you rock');
@@ -68,7 +69,7 @@ export default function Joinus() {
 	return (
 		<Box sx={styles.box}>
 			<Paper sx={styles.box.paper} variant='outlined'>
-				<Typography variant='h4'>Log In</Typography>
+				<Typography variant='h4'>Join Us</Typography>
 				<Box
 					component='form'
 					style={styles.box.paper.box}
@@ -76,6 +77,17 @@ export default function Joinus() {
 					autoComplete='off'
 					onSubmit={handlesubmit}
 				>
+					<TextField
+						sx={styles.box.paper.box.tfields}
+						error={nameError}
+						label='Name'
+						size='small'
+						fullWidth
+						helperText={nameError ? 'Incorrect entry.' : ''}
+						name='name'
+						value={name}
+						onChange={(e) => setName(e.target.value)}
+					/>
 					<TextField
 						sx={styles.box.paper.box.tfields}
 						error={emailError}
@@ -92,8 +104,8 @@ export default function Joinus() {
 						sx={styles.box.paper.box.tfields}
 						error={passError}
 						label='password'
-						password='password'
 						size='small'
+						password='password'
 						helperText={passError ? 'Incorrect entry.' : ''}
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}

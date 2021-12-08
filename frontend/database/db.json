@@ -1,0 +1,28 @@
+{
+	"blogs": [
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "1",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "img"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "2",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "img"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "3",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "img"
+		}
+	]
+}

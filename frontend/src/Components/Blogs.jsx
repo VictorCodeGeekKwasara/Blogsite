@@ -3,19 +3,17 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, Grid } from '@mui/material';
+import { CardActionArea, Grid, Link } from '@mui/material';
 import img from '../assets/images/grow.jpg';
 import { Box } from '@mui/system';
 
 const styles = {
 	box: {
+		width: '80vw',
 		paddingTop: '15vh',
+		margin: 'auto',
 
 		container: {
-			display: 'flex',
-			flexDirection: 'row',
-			alignItems: 'center',
-			justifyContent: 'center',
 			item: {
 				display: 'flex',
 				flexDirection: 'row',
@@ -30,17 +28,22 @@ const arr = new Array(20).fill(0);
 export default function ActionAreaCard() {
 	return (
 		<Box sx={styles.box}>
-			<Grid sx={styles.box.container} container gap={3}>
+			<Grid
+				container
+				spacing={3}
+				justifyContent='space-around'
+				alignItems='center'
+			>
 				{arr.map((_, i) => (
 					<Grid
 						sx={styles.box.container.item}
 						item
 						sm={12}
-						md={3}
+						md={4}
 						key={`${i}+salt`}
 					>
 						<Card>
-							<CardActionArea>
+							<CardActionArea component={Link} href={`/blog/${i}`}>
 								<CardMedia
 									component='img'
 									height='140'

@@ -28,7 +28,7 @@ export default function About() {
 				through education that more people from my home country of Zimbabwe can
 				liberate themselves irrespective of regime. I first learnt programming
 				using Java and web development using java sever pages but i have long
-				since fallen in love with the javascript ecosystem. In 2022 would like
+				since fallen in love with the javascript ecosystem. In 2022 i would like
 				to pursue web 3.0 decentralised app development with react, get a feel
 				of the rust ecosystem and webAssembly. I really hope you enjoy the
 				material
