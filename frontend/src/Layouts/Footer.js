@@ -1,21 +1,37 @@
 import React from 'react';
-import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Copyright from './FooterComponents/Copyright';
+import Links from './FooterComponents/Links';
+import Social from './FooterComponents/Social';
+import SvgIcon from '@mui/material/SvgIcon';
+import { Grid } from '@mui/material';
 
-function Copyright() {
-	return (
-		<Typography>{`\u00A9 Copyright  ` + new Date().getFullYear()}</Typography>
-	);
-}
+const styles = {
+	svg: {},
+	box: {
+		magin: 'auto',
+		backgroundColor: 'black',
+		height: '50vh',
+	},
+};
 
 export default function Footer() {
 	return (
-		<footer>
-			<Container>
-				<Typography>Victors Blog</Typography>
-				<Typography>professorCodeGeek</Typography>
-				<Copyright />
-			</Container>
+		<footer style={{ 'margin-top': '25vh' }}>
+			<Grid container sx={styles.box}>
+				<Grid item sm={12} md={6}>
+					<Links />
+				</Grid>
+
+				<Grid item sm={12} md={6}>
+					<Social />
+				</Grid>
+
+				<Grid item sm={12}>
+					<Copyright />
+				</Grid>
+			</Grid>
 		</footer>
 	);
 }

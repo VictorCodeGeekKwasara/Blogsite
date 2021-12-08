@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export default function about() {
+export default function About() {
 	const styles = {
 		card: {
 			color: '#ffffff',

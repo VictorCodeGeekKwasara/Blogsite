@@ -1,20 +1,17 @@
 .titleList {
 	display: flex;
-	/* align-items: center; */
+	align-items: center;
 	list-style: none;
-	max-width: 100%;
-	overflow-x: scroll;
-	scroll-behavior: smooth;
+	width: 100%;
+	overflow-x: hidden;
 }
 
-.titleList::-webkit-scrollbar {
-	background: transparent;
-
-	width: 0;
-	height: 0;
+.slide {
+	opacity: 0;
+	transition-duration: 2s ease-in-out;
 }
-/* .titleCont::-webkit-appearance: none; */
-.lst {
-	margin-right: 20px;
-	min-width: 40vw;
+
+.active {
+	opacity: 1;
+	transition-duration: 2s;
 }

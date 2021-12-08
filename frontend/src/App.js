@@ -6,6 +6,8 @@ import Logout from './Components/Logout';
 import Login from './Components/Login';
 import Blogs from './Components/Blogs';
 import Contact from './Components/Contact';
+import About from './Components/About';
+import './App.css';
 
 function App() {
 	return (
@@ -15,7 +17,8 @@ function App() {
 					<Route path='/' element={<Home />} />
 					<Route path='blogs' element={<Blogs />} />
 					<Route path='contact' element={<Contact />} />
-					<Route path='login' element={<Login />} />
+					<Route path='loginjoinus' element={<Login />} />
+					<Route path='about' element={<About />} />
 					<Route path='logout' element={<Logout />} />
 				</Routes>
 			</Layout>

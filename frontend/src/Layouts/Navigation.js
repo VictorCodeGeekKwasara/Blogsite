@@ -4,7 +4,14 @@ import Box from '@mui/material/Box';
 import LargeMenu from './NavComponents/LargeMenu';
 import ToggleMenu from './NavComponents/ToggleMenu';
 
-const mylinks = ['about', 'contacts', 'suggest', 'login', 'logout'];
+const mylinks = ['home', 'blogs', 'suggest', 'about', 'contact'];
+
+const styles = {
+	box: {
+		flexGrow: 1,
+		borderBottom: '3px solid black',
+	},
+};
 
 export default function ButtonAppBar() {
 	const [state, setState] = useState(false);
@@ -20,8 +27,8 @@ export default function ButtonAppBar() {
 	}, []);
 
 	return (
-		<Box sx={{ flexGrow: 1, marginBottom: '40px' }}>
-			<AppBar position='static'>
+		<Box sx={styles.box}>
+			<AppBar position='fixed'>
 				{state ? (
 					<LargeMenu mylinks={mylinks} />
 				) : (
