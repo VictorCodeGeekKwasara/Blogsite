@@ -2,27 +2,102 @@
 	"blogs": [
 		{
 			"title": "MOST VIEWED BLOG",
-			"id": "1",
+			"id": "1ddd",
 			"topic": "Books",
 			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
 			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
-			"img": "img"
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
 		},
 		{
 			"title": "MOST VIEWED BLOG",
-			"id": "2",
+			"id": "2dddd",
 			"topic": "Books",
 			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
 			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
-			"img": "img"
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
 		},
 		{
 			"title": "MOST VIEWED BLOG",
-			"id": "3",
+			"id": "3fdg",
 			"topic": "Books",
 			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
 			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
-			"img": "img"
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "5hhhh",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "53333",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "6333f",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "7",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "8",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "9",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "10",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
+		},
+		{
+			"title": "MOST VIEWED BLOG",
+			"id": "11",
+			"topic": "Books",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
+			"preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis consequatur accusantium modi totam incidunt, soluta, aut, sunt dicta velit laboriosam repudiandae tenetur molestias. Perspiciatis odit optio neque consectetur repellat?",
+			"img": "/images/tech.jpg",
+			"alt": "no pic"
 		}
 	]
 }

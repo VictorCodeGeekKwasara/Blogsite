@@ -4,6 +4,8 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
 	box: {
@@ -53,17 +55,44 @@ const styles = {
 };
 
 export default function Joinus() {
-	const [passError, setPassError] = useState(false);
-	const [emailError, setEmailError] = useState(false);
+	const [passError, setPassError] = useState('');
+	const [emailError, setEmailError] = useState('');
 
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+	let navigate = useNavigate();
 
 	const handlesubmit = (e) => {
-		setEmailError(false);
-		setPassError(false);
 		e.preventDefault();
-		console.log('you rock');
+		setEmailError('');
+		setPassError('');
+		axios
+			.post('http://localhost:8000/login', { email, password })
+			.then((res) => {
+				console.log(res);
+				navigate('/', { replace: true });
+			})
+			.catch((err) => {
+				console.log('this one' + err);
+				if (err.response) {
+					// The request was made and the server responded with a status code
+					// that falls out of the range of 2xx
+					// console.log(err.response.data);
+
+					setPassError(err.response.data.errors.password);
+					setEmailError(err.response.data.errors.email);
+					// console.log(err.response.status);
+					// console.log(err.response.headers);
+				} else if (err.request) {
+					// The request was made but no response was received
+					// `err.request` is an instance of XMLHttpRequest in the browser and an instance of
+					// http.ClientRequest in node.js
+					console.log(err.request);
+				} else {
+					// Something happened in setting up the request that triggered an Err
+					console.log('Err', err.message);
+				}
+			});
 	};
 	return (
 		<Box sx={styles.box}>
@@ -78,11 +107,11 @@ export default function Joinus() {
 				>
 					<TextField
 						sx={styles.box.paper.box.tfields}
-						error={emailError}
+						error={emailError !== ''}
 						label='email'
 						size='small'
 						fullWidth
-						helperText={emailError ? 'Incorrect entry.' : ''}
+						helperText={emailError}
 						name='email'
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
@@ -90,11 +119,12 @@ export default function Joinus() {
 					<TextField
 						fullWidth
 						sx={styles.box.paper.box.tfields}
-						error={passError}
+						error={passError !== ''}
 						label='password'
-						password='password'
+						type='password'
+						name='password'
 						size='small'
-						helperText={passError ? 'Incorrect entry.' : ''}
+						helperText={passError}
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 					/>

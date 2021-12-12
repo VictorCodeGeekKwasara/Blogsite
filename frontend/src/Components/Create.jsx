@@ -54,11 +54,10 @@ const styles = {
 	},
 };
 
-export default function Login() {
-	const [nameError, setNameError] = useState('');
+export default function Joinus() {
 	const [passError, setPassError] = useState('');
 	const [emailError, setEmailError] = useState('');
-	const [name, setName] = useState('');
+
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	let navigate = useNavigate();
@@ -66,21 +65,20 @@ export default function Login() {
 	const handlesubmit = (e) => {
 		e.preventDefault();
 		setEmailError('');
-		setNameError('');
 		setPassError('');
 		axios
-			.post('http://localhost:8000/createuser', { name, email, password })
+			.post('http://localhost:8000/login', { email, password })
 			.then((res) => {
-				console.log(res.data);
+				console.log(res);
 				navigate('/', { replace: true });
 			})
 			.catch((err) => {
+				console.log('this one' + err);
 				if (err.response) {
 					// The request was made and the server responded with a status code
 					// that falls out of the range of 2xx
 					// console.log(err.response.data);
-					console.log(err.response.data.errors);
-					setNameError(err.response.data.errors.name);
+
 					setPassError(err.response.data.errors.password);
 					setEmailError(err.response.data.errors.email);
 					// console.log(err.response.status);
@@ -94,13 +92,12 @@ export default function Login() {
 					// Something happened in setting up the request that triggered an Err
 					console.log('Err', err.message);
 				}
-				console.log(err.config);
 			});
 	};
 	return (
 		<Box sx={styles.box}>
 			<Paper sx={styles.box.paper} variant='outlined'>
-				<Typography variant='h4'>Join Us</Typography>
+				<Typography variant='h4'>Log In</Typography>
 				<Box
 					component='form'
 					style={styles.box.paper.box}
@@ -108,17 +105,6 @@ export default function Login() {
 					autoComplete='off'
 					onSubmit={handlesubmit}
 				>
-					<TextField
-						sx={styles.box.paper.box.tfields}
-						error={nameError !== ''}
-						label='Name'
-						size='small'
-						fullWidth
-						helperText={nameError}
-						name='name'
-						value={name}
-						onChange={(e) => setName(e.target.value)}
-					/>
 					<TextField
 						sx={styles.box.paper.box.tfields}
 						error={emailError !== ''}
@@ -135,8 +121,9 @@ export default function Login() {
 						sx={styles.box.paper.box.tfields}
 						error={passError !== ''}
 						label='password'
+						type='message'
+						name='password'
 						size='small'
-						type='password'
 						helperText={passError}
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
